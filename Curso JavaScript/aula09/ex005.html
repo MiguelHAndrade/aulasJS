@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1 de DOM</title>
+    <style>
+        body{
+            background-color: #36939b;
+            color: white;
+            font: lighter 16pt Arial;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Inicio do DOM</h1>
+    <p>Resultado está aqui</p>
+    <p class="mnsg">Aprender a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg" name="msgg">Clica aqui!</div>
+
+    <script>
+
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        var fundo = window.document.body
+
+        var d = document.getElementById('msg')
+
+        var d2 = document.getElementsByName('msgg')[0]
+
+        var c = document.getElementsByClassName('mnsg')[0]
+
+        var q = window.document.querySelector('div#msg')
+
+        //  window.document.write('Está escrito assim: ' + p1.innerText)
+        // p1.style.color = 'blue'
+
+        // fundo.style.backgroundColor = 'darkblue'
+
+        document.write('<br>' + p1.innerHTML)
+
+        document.write('<br>' + '<br>' + d.innerHTML)
+
+        d.style.background = 'green'
+
+        d.innerText = 'Verde Green'
+
+        document.write('<br>' + '<br>' + d2.innerHTML)
+
+        document.write('<br>' + '<br>' + c.innerHTML)
+        c.style.color = 'orange'
+
+        document.write('<br>' + '<br>' + q.innerHTML)
+
+
+        // window.alert(p1.innerText)
+
+    </script>
+    
+</body>
+</html>

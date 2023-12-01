@@ -1,6 +1,8 @@
 var agora = new Date()
 var diaSem =  agora.getDay()
 
+// var diaSem =  9
+
 console.log(diaSem)
 
 /* Dias da semana JavaScript:

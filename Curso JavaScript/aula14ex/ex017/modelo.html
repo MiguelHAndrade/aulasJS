@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title> 
+    <title>Tabela de Tabuada</title> 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Multiplicação & Divisão</h1>
     </header>
     <section>
         <div>
-            Texto Div 1
+            <p>Número: <input type="number" name="txtnr" id="txtnr"> <button type="button" onclick="mostra()">Mostrar</button></p>
         </div>
         <div>
-            Texto Div 2
+            <select name="tabuada" id="tabuada" size="15">
+                <option>Inserir Número a cima...</option>
+            </select>
+            <select name="divisao" id="divisao" size="15">
+                <option>Inserir Número a cima...</option>
+            </select>
+            <p id="test"></p>
         </div>
     </section>
     <footer>

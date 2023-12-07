@@ -1,4 +1,4 @@
-let num = [9, 1, 2, 3, 4, 11]
+let num = [9, 1, 2, 3, 4, 8]
 
 num[3] = 5
 
@@ -16,9 +16,17 @@ while (pos < num.length) {
 }
 
 for (let pos=0; pos<num.length; pos++) {
-    console.log(num[pos])
+    console.log(`Valor: ${num[pos]}`)
 }
 
 for (let pos in num) {
     console.log(`Os Arrays são: ${num[pos]}`)
+}
+
+let pesq = num.indexOf(8)
+
+if (pesq == -1) {
+    console.log(`O valor pesquisado não está no Array`)
+} else {
+    console.log(`O valor pesquisado está na posição ${pesq}.`)
 }
